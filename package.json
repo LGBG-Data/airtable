@@ -1,0 +1,22 @@
+{
+  "author": "Graham Wimbrow",
+  "dependencies": {
+    "airtable": "^0.4.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "description": "Airtable server middleware",
+  "engines": {
+    "node": "6.3.1"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "AirServer",
+  "private": true,
+  "scripts": {
+    "local": "nodemon -w ./index.js",
+    "start": "node ./index.js"
+  },
+  "version": "1.0.0"
+}
