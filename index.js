@@ -1,6 +1,9 @@
-const config = require('./config');
 const Airtable = require('airtable');
 const express = require('express');
+
+if (process.env.NODE_ENV !== 'production') {
+  const config = require('./config');
+}
 
 const PORT = process.env.PORT || config.port;
 const BASE = process.env.BASE || config.base;
