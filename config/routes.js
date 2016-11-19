@@ -1,7 +1,7 @@
 module.exports = (app, base) => {
-  app.get('/', (req, res) => {
+  app.get('/:table', (req, res) => {
     let response = [];
-    base('Students').select().eachPage((records, next) => {
+    base(req.params.table).select().eachPage((records, next) => {
       records.forEach(record => response.push(record._rawJson));
       next();
     }, err => {
