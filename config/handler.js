@@ -16,7 +16,7 @@ module.exports = {
       }).base(BASE);
       next();
     }
-    res.send(403);
+    res.sendStatus(403);
   },
 
   getTable: (req, res) => {
@@ -33,9 +33,10 @@ module.exports = {
     });
   },
 
-  getData: (req, res) => {
+  getView: (req, res) => {
+    let view = req.params.view;
     let response = [];
-    req.base.select().eachPage((records, next) => {
+    req.base.select('Students').eachPage((records, next) => {
 
       records.forEach(record => {
 
