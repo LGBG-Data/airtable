@@ -1,14 +1,8 @@
+const handler = require('./handler');
+
 module.exports = (app, base) => {
-  app.get('/:table', (req, res) => {
-    let response = [];
-    base(req.params.table).select().eachPage((records, next) => {
-      records.forEach(record => response.push(record._rawJson));
-      next();
-    }, err => {
-      if (err) {
-        throw err;
-      }
-      res.json(response);
-    });
-  });
+  app.get('/api/:table', (req, res, next) => {
+    req.base = base(req.params.table);
+    next();
+  }, handler.getData);
 };
