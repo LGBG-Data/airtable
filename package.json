@@ -15,7 +15,7 @@
   "name": "AirServer",
   "private": true,
   "scripts": {
-    "local": "nodemon -w ./index.js",
+    "local": "NODE_ENV=development nodemon -w ./index.js",
     "start": "node ./index.js"
   },
   "version": "1.0.0"

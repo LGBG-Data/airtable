@@ -1,14 +1,18 @@
+const Airtable = require('airtable');
+const config = require('./config');
 const express = require('express');
 
-if (process.env.NODE_ENV !== 'production') {
-  const config = require('./config');
-}
-
+const BASE = process.env.BASE || config.base;
+const KEY = process.env.KEY || config.key;
 const PORT = process.env.PORT || config.port;
+
+const base = new Airtable({
+  apiKey: KEY
+}).base(BASE);
 
 const app = express();
 
-require('./config/middleware')(app);
+require('./config/middleware')(app, base, KEY);
 require('./config/routes')(app);
 
 app.set('port', PORT);

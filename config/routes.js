@@ -1,6 +1,6 @@
 const handler = require('./handler');
 
-module.exports = (app, base) => {
+module.exports = app => {
 
   app.get('/api/table/:table', handler.getTable);
 
