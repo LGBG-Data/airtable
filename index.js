@@ -1,4 +1,3 @@
-const Airtable = require('airtable');
 const express = require('express');
 
 if (process.env.NODE_ENV !== 'production') {
@@ -6,14 +5,11 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const PORT = process.env.PORT || config.port;
-const BASE = process.env.BASE || config.base;
-const KEY = process.env.KEY || config.key;
 
 const app = express();
-const base = new Airtable({apiKey: KEY}).base(BASE);
 
-require('./config/middleware')(app, express);
-require('./config/routes')(app, base);
+require('./config/middleware')(app);
+require('./config/routes')(app);
 
 app.set('port', PORT);
 app.listen(app.get('port'), () => {
