@@ -1,5 +1,5 @@
 const Airtable = require('airtable');
-const config = require('./config');
+// const config = require('./config');
 const express = require('express');
 
 const BASE = process.env.BASE || config.base;
