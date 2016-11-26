@@ -1,6 +1,10 @@
 const Airtable = require('airtable');
-// const config = require('./config');
 const express = require('express');
+var config;
+
+if (process.env.NODE_ENV !== 'production') {
+  config = require('./config');
+}
 
 const BASE = process.env.BASE || config.base;
 const KEY = process.env.KEY || config.key;
