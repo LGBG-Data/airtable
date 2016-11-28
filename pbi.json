@@ -2,7 +2,11 @@
   "courses": {
     "table": "Activity Periods",
     "keep": [
-      "Activity Long Name",
+      {
+        "alias": "Activity Long Name",
+        "table": "Activity Ref",
+        "field": "Activity ID"
+      },
       "Activity Short Name",
       "Activity Type",
       "Assistant Instructor(s)",
@@ -27,7 +31,11 @@
       "Site",
       "Start Date",
       "Student Contact Hours",
-      "Students",
+      {
+        "alias": "Students",
+        "table": "Students",
+        "field": "Student ID"
+      },
       "Support Level",
       "Time",
       "Total Students Enrolled"
