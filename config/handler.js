@@ -32,22 +32,20 @@ module.exports = {
     if (listViews.indexOf(view) === -1) {
       throw new Error(`supplied view must be one of ${listViews.join(', ')}`)
     }
-    req.base(views[view].table).select({
-      maxRecords: 3
-    }).eachPage((records, next) => {
+    req.base(views[view].table).select().eachPage((records, next) => {
       let promised = [];
       records.forEach(record => {
         let formed = {};
         views[view].keep.forEach(prop => {
           if (prop.alias) {
-            formed[prop.alias] = [];
+            formed[prop.alias] = record.fields[prop.alias].length ? [] : null;
             record.fields[prop.alias].forEach(link => {
               promised.push(query(req.base, prop, link).then((found) => {
                 formed[prop.alias].push(found);
               }));
             });
           } else {
-            formed[prop] = record.fields[prop] || [];
+            formed[prop] = record.fields[prop] || null;
           }
         });
         response.push(formed);

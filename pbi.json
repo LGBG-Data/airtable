@@ -86,16 +86,28 @@
         "table": "Users",
         "field": "User ID"
       },
-      "Connected Activity",
+      {
+        "alias": "Connected Activity",
+        "table": "Activity Ref",
+        "field": "Activity ID"
+      },
       "Head Count",
       "Hours",
-      "Lead Trainer",
+      {
+        "alias": "Lead Trainer",
+        "table": "Users",
+        "field": "User ID"
+      },
       "Name",
       "Partner",
       "Region",
       "School Year",
       "Semester",
-      "Site",
+      {
+        "alias": "Site",
+        "table": "Location Ref",
+        "field": "Site"
+      },
       "Training Location"
     ]
   }
