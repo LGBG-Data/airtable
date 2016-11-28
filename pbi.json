@@ -9,7 +9,11 @@
       },
       "Activity Short Name",
       "Activity Type",
-      "Assistant Instructor(s)",
+      {
+        "alias": "Assistant Instructor(s)",
+        "table": "Users",
+        "field": "User ID"
+      },
       "Course Grade Level(s)",
       "Course Period",
       "Estimated Grade Levels",
@@ -17,7 +21,11 @@
       "Head Count",
       "Head Count Only?",
       "Hours",
-      "Instructor(s)",
+      {
+        "alias": "Instructor(s)",
+        "table": "Users",
+        "field": "User ID"
+      },
       "Participants Active?",
       "Partner",
       "Partner (Non-LET'S GO)",
@@ -28,7 +36,11 @@
       "School Year",
       "Selection",
       "Semester",
-      "Site",
+      {
+        "alias": "Site",
+        "table": "Location Ref",
+        "field": "Site"
+      },
       "Start Date",
       "Student Contact Hours",
       {
