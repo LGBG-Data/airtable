@@ -59,7 +59,10 @@
       "Academic Program",
       "Active Bool",
       "Active?",
-      "Activities",
+      {
+        "alias": "Activities",
+        "track": "courses"
+      },
       "Activity Count",
       "Additional STEM Scholar Comments",
       "Birthdate",
