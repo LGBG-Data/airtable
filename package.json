@@ -2,6 +2,7 @@
   "author": "Graham Wimbrow",
   "dependencies": {
     "airtable": "^0.4.3",
+    "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0"
@@ -15,7 +16,7 @@
   "name": "AirServer",
   "private": true,
   "scripts": {
-    "local": "nodemon -w ./index.js",
+    "local": "nodemon ./index.js -w ./",
     "start": "node ./index.js"
   },
   "version": "1.0.0"
