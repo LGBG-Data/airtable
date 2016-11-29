@@ -1,43 +1,66 @@
 const Promise = require('bluebird');
 const views = require('../pbi');
+
 const listViews = Object.keys(views);
 
-const query = (base, {field, table, track}, link) => {
-  return track ? compile(base, track) : new Promise((resolve, reject) => {
-    base(table).find(link, (err, found) => {
-      if (err) {
-        reject(err);
+const scan = (base, record, view) => {
+  return new Promise((resolve, reject) => {
+    record = record.fields;
+    let filtered = {};
+    let promised = [];
+    views[view].keep.forEach(prop => {
+      if (prop.alias) {
+        if (record[prop.alias]) {
+          filtered[prop.alias] = [];
+          record[prop.alias].forEach((link, i) => {
+            promised.push(query(base, prop, link).then(found => {
+              filtered[prop.alias][i] = found;
+            }));
+          });
+        } else {
+          filtered[prop.alias] = null;
+        }
+      } else if (record[prop]) {
+        filtered[prop] = record[prop];
+      } else {
+        filtered[prop] = null;
       }
-      resolve(found.fields[field]);
     });
+    Promise.all(promised).then(() => resolve(filtered)).catch(err => console.log(err));
   });
+}
+
+const query = (base, {field, table, track}, link) => {
+  if (track) {
+    return new Promise((resolve, reject) => {
+      base(views[track].table).find(link, (err, found) => {
+        if (err) {
+          reject(err);
+        }
+        scan(base, found, track).then(scanned => resolve(scanned)).catch(err => console.log(err));
+      });
+    })
+  } else {
+    return new Promise((resolve, reject) => {
+      base(table).find(link, (err, found) => {
+        if (err) {
+          reject(err);
+        }
+        resolve(found.fields[field]);
+      });
+    });
+  }
 }
 
 const compile = (base, view) => {
   return new Promise((resolve, reject) => {
     let response = [];
     base(views[view].table).select({
-      maxRecords: 1
+      maxRecords: 5
     }).eachPage((records, next) => {
-      let promised = [];
+      promised = [];
       records.forEach(record => {
-        let formed = {};
-        views[view].keep.forEach(prop => {
-
-          if (prop.alias && record.fields[prop.alias]) {
-
-            formed[prop.alias] = record.fields[prop.alias].length ? [] : null;
-
-            record.fields[prop.alias].forEach(link => {
-              promised.push(query(base, prop, link).then(found => {
-                formed[prop.alias].push(found);
-              }));
-            });
-          } else {
-            formed[prop] = record.fields[prop] || null;
-          }
-        });
-        response.push(formed);
+        promised.push(scan(base, record, view).then(scanned => response.push(scanned)).catch(err => console.log(err)));
       });
       Promise.all(promised).then(() => next()).catch(err => console.log(err));
     }, err => err ? reject(err) : resolve(response));

@@ -88,7 +88,11 @@
       "Photo",
       "Regions",
       "STEM Status",
-      "Sites",
+      {
+        "alias": "Sites",
+        "table": "Location Ref",
+        "field": "Site"
+      },
       "Student Ethnicity",
       "Student ID",
       "Unique Partners",
