@@ -59,11 +59,6 @@
       "Academic Program",
       "Active Bool",
       "Active?",
-      {
-        "alias": "Activities",
-        "table": "Activity Periods",
-        "field": "Course Period"
-      },
       "Activity Count",
       "Additional STEM Scholar Comments",
       "Birthdate",
@@ -85,15 +80,9 @@
       "Mentor Workplace",
       "Middle Name / Initial",
       "No Photo Permission",
-      "Partners",
+      "PBI Activities",
       "Photo",
-      "Regions",
       "STEM Status",
-      {
-        "alias": "Sites",
-        "table": "Location Ref",
-        "field": "Site"
-      },
       "Student Ethnicity",
       "Student ID",
       "Unique Partners",
