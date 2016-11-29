@@ -57,9 +57,7 @@ const query = (base, {field, table, track}, link) => {
 const compile = (base, view) => {
   return new Promise((resolve, reject) => {
     let response = [];
-    base(views[view].table).select({
-      maxRecords: 5
-    }).eachPage((records, next) => {
+    base(views[view].table).select().eachPage((records, next) => {
       promised = [];
       records.forEach(record => {
         promised.push(scan(base, record, view).then(scanned => response.push(scanned)).catch(err => console.log(err)));
