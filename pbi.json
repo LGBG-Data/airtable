@@ -61,7 +61,8 @@
       "Active?",
       {
         "alias": "Activities",
-        "track": "courses"
+        "table": "Activity Periods",
+        "field": "Course Period"
       },
       "Activity Count",
       "Additional STEM Scholar Comments",

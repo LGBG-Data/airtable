@@ -31,6 +31,7 @@ const scan = (base, record, view) => {
 }
 
 const query = (base, {field, table, track}, link) => {
+  console.log('querying', table, ':', field);
   if (track) {
     return new Promise((resolve, reject) => {
       base(views[track].table).find(link, (err, found) => {
@@ -46,6 +47,7 @@ const query = (base, {field, table, track}, link) => {
         if (err) {
           reject(err);
         }
+        console.log('found:', found.fields[field]);
         resolve(found.fields[field]);
       });
     });
