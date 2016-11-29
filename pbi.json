@@ -2,18 +2,10 @@
   "courses": {
     "table": "Activity Periods",
     "keep": [
-      {
-        "alias": "Activity Long Name",
-        "table": "Activity Ref",
-        "field": "Activity ID"
-      },
+      "PBI Activity Long Name",
       "Activity Short Name",
       "Activity Type",
-      {
-        "alias": "Assistant Instructor(s)",
-        "table": "Users",
-        "field": "User ID"
-      },
+      "PBI Assistant Instructor(s)",
       "Course Grade Level(s)",
       "Course Period",
       "Estimated Grade Levels",
@@ -21,11 +13,7 @@
       "Head Count",
       "Head Count Only?",
       "Hours",
-      {
-        "alias": "Instructor(s)",
-        "table": "Users",
-        "field": "User ID"
-      },
+      "PBI Instructor(s)",
       "Participants Active?",
       "Partner",
       "Partner (Non-LET'S GO)",
@@ -36,18 +24,10 @@
       "School Year",
       "Selection",
       "Semester",
-      {
-        "alias": "Site",
-        "table": "Location Ref",
-        "field": "Site"
-      },
+      "PBI Site",
       "Start Date",
       "Student Contact Hours",
-      {
-        "alias": "Students",
-        "table": "Students",
-        "field": "Student ID"
-      },
+      "PBI Students",
       "Support Level",
       "Time",
       "Total Students Enrolled"
@@ -98,33 +78,17 @@
       "Activity Start Date",
       "Activity Type",
       "Attendee Count",
-      {
-        "alias": "Attendees",
-        "table": "Users",
-        "field": "User ID"
-      },
-      {
-        "alias": "Connected Activity",
-        "table": "Activity Ref",
-        "field": "Activity ID"
-      },
+      "PBI Attendees",
+      "PBI Connected Activity",
       "Head Count",
       "Hours",
-      {
-        "alias": "Lead Trainer",
-        "table": "Users",
-        "field": "User ID"
-      },
+      "PBI Lead Trainer",
       "Name",
       "Partner",
       "Region",
       "School Year",
       "Semester",
-      {
-        "alias": "Site",
-        "table": "Location Ref",
-        "field": "Site"
-      },
+      "PBI Site",
       "Training Location"
     ]
   }
