@@ -21,7 +21,7 @@ const scan = (base, record, view) => {
           filtered[prop.alias] = null;
         }
       } else if (record[prop]) {
-        filtered[prop] = record[prop];
+        filtered[prop] = Array.isArray(record[prop]) ? record[prop].join(', ') : record[prop];
       } else {
         filtered[prop] = null;
       }
@@ -83,6 +83,9 @@ module.exports = {
     if (listViews.indexOf(view) === -1) {
       throw new Error(`supplied view must be one of ${listViews.join(', ')}`)
     }
-    compile(req.base, view).then(response => res.json(response)).catch(err => res.send(err));
+    compile(req.base, view).then(response => {
+      console.log(response.length);
+      return res.json(response);
+    }).catch(err => res.send(err));
   }
 }
