@@ -56,7 +56,7 @@ const compile = (base, view) => {
   return new Promise((resolve, reject) => {
     let response = [];
     base(views[view].table).select().eachPage((records, next) => {
-      promised = [];
+      let promised = [];
       records.forEach(record => {
         promised.push(scan(base, record, view).then(scanned => response.push(scanned)).catch(err => console.log(err)));
       });
@@ -84,7 +84,7 @@ module.exports = {
       throw new Error(`supplied view must be one of ${listViews.join(', ')}`)
     }
     compile(req.base, view).then(response => {
-      console.log(response.length);
+      console.log('found', response.length, 'records');
       return res.json(response);
     }).catch(err => res.send(err));
   }
