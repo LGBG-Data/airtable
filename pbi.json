@@ -88,5 +88,23 @@
       "PBI Site",
       "Training Location"
     ]
+  },
+  "users": {
+    "table": "Users",
+    "keep": [
+      "User ID",
+      "First Name",
+      "Last Name",
+      "Gender",
+      "Race/Ethnicity",
+      "User Type",
+      "Home Region",
+      "Certified Teacher",
+      "PBI Student Activities Led",
+      "PBI Associated Sites",
+      "Associated Regions",
+      "PBI User Activities Led",
+      "PBI Training/Activity Participation"
+    ]
   }
 }
