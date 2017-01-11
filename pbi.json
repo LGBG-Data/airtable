@@ -66,7 +66,7 @@
       "Unique Partners",
       "Unique Regions",
       "Unique Sites",
-      "Unique Years Active"
+      "Unique Years Active",
     ]
   },
   "trainings": {
@@ -106,6 +106,13 @@
       "PBI User Activities Led",
       "PBI Training/Activity Participation",
       "PBI Years Student Activities Led"
+    ]
+  },
+  "zipcode": {
+    "table": "Students",
+    "keep": [
+      "Median Income 2015",
+      "Zipcode"
     ]
   }
 }
