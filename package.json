@@ -9,7 +9,7 @@
   },
   "description": "Airtable server middleware",
   "engines": {
-    "node": "6.3.1"
+    "node": "7.x"
   },
   "license": "MIT",
   "main": "./index.js",

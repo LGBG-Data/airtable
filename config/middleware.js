@@ -3,19 +3,23 @@ const morgan = require('morgan');
 
 module.exports = (app, base, KEY) => {
 
+  app.use(morgan('dev'));
+
   app.use(bodyParser.urlencoded({
     extended: true
   }));
 
   app.use((req, res, next) => {
-    // let bearer = req.headers.authorization.replace('Bearer ', '');
-    // if (bearer === KEY) {
-      req.base = base;
-      next();
-    // } else {
-    //   res.sendStatus(403);
-    // }
-  });
 
-  app.use(morgan('dev'));
+    const {authorization} = req.headers;
+
+    if (authorization && authorization.endsWith(KEY)) {
+
+      req.base = base;
+      
+      return next();
+    }
+     
+    return res.sendStatus(403);
+  });
 };
