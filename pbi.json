@@ -28,7 +28,8 @@
       "PBI Students",
       "Support Level",
       "Time",
-      "Total Students Enrolled"
+      "Total Students Enrolled",
+      "All Instructors Count"
     ]
   },
   "students": {
