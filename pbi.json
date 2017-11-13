@@ -3,6 +3,7 @@
     "table": "Activity Periods",
     "keep": [
       "PBI Activity Long Name",
+      "Head Count From Roster",
       "Activity Short Name",
       "Activity Type",
       "PBI Assistant Instructors",
