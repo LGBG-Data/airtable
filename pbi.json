@@ -30,7 +30,8 @@
       "Support Level",
       "Time",
       "Total Students Enrolled",
-      "All Instructors Count"
+      "All Instructors Count",
+      "Year-Semester"
     ]
   },
   "students": {
@@ -68,7 +69,8 @@
       "Unique Partners",
       "Unique Regions",
       "Unique Sites",
-      "Unique Years Active"
+      "Unique Years Active",
+      "Unique Semesters Active"
     ]
   },
   "trainings": {
