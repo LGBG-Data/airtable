@@ -38,6 +38,7 @@
   "students": {
     "table": "Students",
     "keep": [
+      "Academic Program",
       "Active Bool",
       "Active?",
       "Activity Count",
