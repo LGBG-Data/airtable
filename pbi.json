@@ -79,7 +79,6 @@
       "PBI Activity Type",
       "Attendee Count",
       "PBI Attendees",
-      "PBI Connected Activity",
       "Head Count",
       "Hours",
       "PBI Lead Trainer",
@@ -87,10 +86,10 @@
       "Name",
       "PBI Partner",
       "PBI Region",
-      "PBI Unique Region",
-      "School Year",
-      "Semester",
       "PBI Site",
+      "School Year",
+      "Year-Semester",
+      "Semester",      
       "Training Location"
     ]
   },
