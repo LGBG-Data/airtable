@@ -118,7 +118,7 @@
       "PBI Zipcode"
     ]
   },
-“OutsideActivityPeriods": {
+"OutsideActivityPeriods": {
   "table": "Outside Activity Periods",
   "keep": [
   "O-Activity_ID",
