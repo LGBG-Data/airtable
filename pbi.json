@@ -120,33 +120,33 @@
   },
 "OutsideActivityPeriods": {
   "table": "Outside Activity Periods",
-  "keep": [
-  "O-Activity_ID",
-  "O-Head Count from Roster",
-  "O-Activity Short Name",
-  "O-Activity Type",
-  "O-Course Grade Level(s)",
-  "O-Estimated Grade Levels (unique)",
-  "O-Head Count",
-  "O-Hours",
-  "O-Participants Active?",
-  "O-PBI Partner",
-  "O-Provider",
-  "O-PBI-Region",
-  "O-Reported Grade Levels (unique)",
-  "O-School Year",
-  "O-Selection",
-  "O-Semester",
-  "O-PBI Site",
-  "O-Student Contact Hours",
-  "O-PBI Students",
-  "O-Support Level",
-  "O-Time",
-  "O-Total Students Enrolled",
-  "O-Year-Semester"
+    "keep": [
+    "O-Activity_ID",
+    "O-Head Count from Roster",
+    "O-Activity Short Name",
+    "O-Activity Type",
+    "O-Course Grade Level(s)",
+    "O-Estimated Grade Levels (unique)",
+    "O-Head Count",
+    "O-Hours",
+    "O-Participants Active?",
+    "O-PBI Partner",
+    "O-Provider",
+    "O-PBI-Region",
+    "O-Reported Grade Levels (unique)",
+    "O-School Year",
+    "O-Selection",
+    "O-Semester",
+    "O-PBI Site",
+    "O-Student Contact Hours",
+    "O-PBI Students",
+    "O-Support Level",
+    "O-Time",
+    "O-Total Students Enrolled",
+    "O-Year-Semester"
 ]
-},
+}
     
-    
+}
   }
 }
