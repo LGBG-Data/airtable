@@ -2,6 +2,7 @@
   "courses": {
     "table": "Activity Periods",
     "keep": [
+      "Activity_ID",
       "PBI Activity Long Name",
       "Head Count from Roster",
       "Activity Short Name",
@@ -122,13 +123,18 @@
   "table": "Outside Activity Periods",
     "keep": [
     "O-Activity_ID",
+    "O-PBI Activity Long Name
     "O-Head Count from Roster",
     "O-Activity Short Name",
     "O-Activity Type",
+    "O-PBI Assistant Instructors",
     "O-Course Grade Level(s)",
+     "O-Course Period",
     "O-Estimated Grade Levels (unique)",
     "O-Head Count",
+    "O-Head Count Only?",
     "O-Hours",
+    "O-PBI Instructors",
     "O-Participants Active?",
     "O-PBI Partner",
     "O-Provider",
@@ -138,11 +144,13 @@
     "O-Selection",
     "O-Semester",
     "O-PBI Site",
+      "O-Start Date",
     "O-Student Contact Hours",
     "O-PBI Students",
     "O-Support Level",
     "O-Time",
     "O-Total Students Enrolled",
+      "O-All Instructors Count",
     "O-Year-Semester"
   ]
 }
