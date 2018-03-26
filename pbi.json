@@ -123,7 +123,7 @@
   "table": "Outside Activity Periods",
     "keep": [
     "O-Activity_ID",
-    "O-PBI Activity Long Name
+    "O-PBI Activity Long Name,
     "O-Head Count from Roster",
     "O-Activity Short Name",
     "O-Activity Type",
