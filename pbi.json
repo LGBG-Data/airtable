@@ -42,6 +42,7 @@
       "Active?",
       "Activity Count",
       "Additional STEM Scholar Comments",
+      "Airtable ID",
       "Birthdate",
       "Career Aspiration",
       "Content Hours",
@@ -70,7 +71,8 @@
       "Unique Regions",
       "Unique Sites",
       "Unique Years Active",
-      "Unique Semesters Active"
+      "Unique Semesters Active",
+      "PBI Zipcode"
     ]
   },
   "trainings": {
