@@ -3,6 +3,7 @@
     "table": "Activity Periods",
     "keep": [
       "Activity_ID",
+      "Long Name",
       "PBI Activity Long Name",
       "Head Count from Roster",
       "Activity Short Name",
