@@ -131,7 +131,7 @@
   },
 "Activity Reference": {
   "table": "Activity Ref",
-  "keep": {
+  "keep": [
     "Activity ID",
     "Long Name",
     "Activity Type",
