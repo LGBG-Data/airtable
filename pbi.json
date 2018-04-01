@@ -129,6 +129,17 @@
       "PBI Zipcode"
     ]
   },
+"Activity Reference": {
+  "table": "Activity Ref",
+  "keep": {
+    "Activity ID",
+    "Long Name",
+    "Activity Type",
+    "Provider"
+    ]
+  },
+   
+   
 "OutsideActivityPeriods": {
   "table": "Outside Activity Periods",
     "keep": [
