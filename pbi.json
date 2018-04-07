@@ -2,7 +2,8 @@
   "courses": {
     "table": "Activity Periods",
     "keep": [
-      "Activity_ID",
+      "Activity ID Name",
+      "ActivityPeriodID",
       "PBI Activity Long Name",
       "Head Count from Roster",
       "Activity Short Name",
@@ -38,6 +39,7 @@
     "table": "Location Ref",
     "keep": [
       "Site",
+      "LocationRefID",
       "PBI Region",
       "Partner"
       ]    
@@ -74,7 +76,8 @@
       "Photo",
       "STEM Status",
       "Student Ethnicity",
-      "Student ID",
+      "Student ID Name",
+      "StudentID",
       "Unique Partners",
       "Unique Regions",
       "Unique Sites",
@@ -100,14 +103,16 @@
       "PBI Site",
       "School Year",
       "Year-Semester",
-      "Semester",      
+      "Semester",
+      "UserActivityID"
       "Training Location"
     ]
   },
   "users": {
     "table": "Users",
     "keep": [
-      "User ID Code",
+      "UserID Name",
+      "UserID",
       "First Name",
       "Last Name",
       "Gender",
@@ -135,6 +140,7 @@
     "Activity ID",
     "Long Name",
     "Activity Type",
+   "ZipCodeID",
     "Provider"
     ]
   },
