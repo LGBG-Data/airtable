@@ -1,182 +1,180 @@
 {
-  "courses": {
-    "table": "Activity Periods",
-    "keep": [
-      "Activity ID Name",
-      "ActivityPeriodID",
-      "PBI Activity Long Name",
-      "Head Count from Roster",
-      "Activity Short Name",
-      "Activity Type",
-      "PBI Assistant Instructors",
-      "Course Grade Level(s)",
-      "Estimated Grade Levels (unique)",
-      "Head Count",
-      "Head Count Only?",
-      "Hours",
-      "PBI Instructors",
-      "Participants Active?",
-      "PBI Partner",
-      "Provider",
-      "PBI Region",
-      "Reported Grade Levels (unique)",
-      "School Year",
-      "Selection",
-      "Semester",
-      "PBI Site",
-      "Start Date",
-      "Student Contact Hours",
-      "PBI Students",
-      "Support Level",
-      "Time",
-      "Total Students Enrolled",
-      "All Instructors Count",
-      "Year-Semester"
-    ]
-  },
-  "Location Ref": {
-    "table": "Location Ref",
-    "keep": [
-      "Site",
-      "LocationRefID",
-      "PBI Region",
-      "Partner"
-      ]    
-  },
-  "students": {
-    "table": "Students",
-    "keep": [
-      "Academic Program",
-      "Active Bool",
-      "Active?",
-      "Activity Count",
-      "Additional STEM Scholar Comments",
-      "Birthdate",
-      "Career Aspiration",
-      "Content Hours",
-      "PBI Current School",
-      "Designation",
-      "Date of Last ICF",
-      "Estimated Grade",
-      "Estimated Grade Band",
-      "First Name",
-      "Gender",
-      "Last Name",
-      "Mentor First Name",
-      "Mentor Last Name",
-      "Mentor Notes",
-      "Mentor Position",
-      "Mentor Workplace",
-      "Middle Name / Initial",
-      "No Photo Permission",
-      "PBI Activities",
-      "PBI Full Activity Info",
-      "Photo",
-      "STEM Status",
-      "Student Ethnicity",
-      "Student ID Name",
-      "StudentID",
-      "Unique Partners",
-      "Unique Regions",
-      "Unique Sites",
-      "Unique Years Active",
-      "Unique Semesters Active",
-      "PBI Zipcode"
-    ]
-  },
-  "trainings": {
-    "table": "User Activites",
-    "keep": [
-      "Activity Start Date",
-      "PBI Activity Type",
-      "Attendee Count",
-      "PBI Attendees",
-      "Head Count",
-      "Hours",
-      "PBI Lead Trainer",
-      "PBI STEM Activity",
-      "Name",
-      "PBI Partner",
-      "PBI Region",
-      "PBI Site",
-      "School Year",
-      "Year-Semester",
-      "Semester",
-      "UserActivityID"
-      "Training Location"
-    ]
-  },
-  "users": {
-    "table": "Users",
-    "keep": [
-      "UserID Name",
-      "UserID",
-      "First Name",
-      "Last Name",
-      "Gender",
-      "Race/Ethnicity",
-      "User Type",
-      "Home Region",
-      "Certified Teacher",
-      "PBI Student Activities Led",
-      "PBI Associated Sites",
-      "Associated Regions",
-      "PBI User Activities Led",
-      "PBI Training/Activity Participation"
-    ]
-  },
-  "zipcode": {
-    "table": "Students",
-    "keep": [
-      "Median Income 2015",
-      "ZipCodeID",
-      "PBI Zipcode"
-    ]
-  },
-"Activity Reference": {
-  "table": "Activity Ref",
-  "keep": [
-    "Activity ID",
-    "Long Name",
-    "Activity Type",
-       "Provider"
-    ]
-  },
-   
-   
-"OutsideActivityPeriods": {
-  "table": "Outside Activity Periods",
-    "keep": [
-    "O-Activity_ID",
-    "O-PBI Activity Long Name",
-    "O-Head Count from Roster",
-    "O-Activity Short Name",
-    "O-Activity Type",
-    "O-PBI Assistant Instructors",
-    "O-Course Grade Level(s)",
-    "O-Estimated Grade Levels (unique)",
-    "O-Head Count",
-    "O-Head Count Only?",
-    "O-Hours",
-    "O-PBI Instructors",
-    "O-Participants Active?",
-    "O-PBI Partner",
-    "O-Provider",
-    "O-PBI Region",
-    "O-Reported Grade Levels (unique)",
-    "O-School Year",
-    "O-Selection",
-    "O-Semester",
-    "O-PBI Site",
-    "O-Start Date",
-    "O-Student Contact Hours",
-    "O-PBI Students",
-    "O-Support Level",
-    "O-Time",
-    "O-Total Students Enrolled",
-      "O-All Instructors Count",
-    "O-Year-Semester"
-  ]
-}
-    
-}
+	  "courses": {
+	    "table": "Activity Periods",
+	    "keep": [
+	      "Activity_ID",
+	      "PBI Activity Long Name",
+	      "Head Count from Roster",
+	      "Activity Short Name",
+	      "Activity Type",
+	      "PBI Assistant Instructors",
+	      "Course Grade Level(s)",
+	      "Course Period",
+	      "Estimated Grade Levels (unique)",
+	      "Head Count",
+	      "Head Count Only?",
+	      "Hours",
+	      "PBI Instructors",
+	      "Participants Active?",
+	      "PBI Partner",
+	      "Provider",
+	      "PBI Region",
+	      "Reported Grade Levels (unique)",
+	      "School Year",
+	      "Selection",
+	      "Semester",
+	      "PBI Site",
+	      "Start Date",
+	      "Student Contact Hours",
+	      "PBI Students",
+	      "Support Level",
+	      "Time",
+	      "Total Students Enrolled",
+	      "All Instructors Count",
+	      "Year-Semester"
+	    ]
+	  },
+	  "Location Ref": {
+	    "table": "Location Ref",
+	    "keep": [
+	      "Site",
+	      "PBI Region",
+	      "Partner"
+	      ]    
+	  },
+	  "students": {
+	    "table": "Students",
+	    "keep": [
+	      "Academic Program",
+	      "Active Bool",
+	      "Active?",
+	      "Activity Count",
+	      "Additional STEM Scholar Comments",
+	      "Airtable ID",
+	      "Birthdate",
+	      "Career Aspiration",
+	      "Content Hours",
+	      "PBI Current School",
+	      "Designation",
+	      "Date of Last ICF",
+	      "Estimated Grade",
+	      "Estimated Grade Band",
+	      "First Name",
+	      "Gender",
+	      "Last Name",
+	      "Mentor First Name",
+	      "Mentor Last Name",
+	      "Mentor Notes",
+	      "Mentor Position",
+	      "Mentor Workplace",
+	      "Middle Name / Initial",
+	      "No Photo Permission",
+	      "PBI Activities",
+	      "PBI Full Activity Info",
+	      "Photo",
+	      "STEM Status",
+	      "Student Ethnicity",
+	      "Student ID",
+	      "Unique Partners",
+	      "Unique Regions",
+	      "Unique Sites",
+	      "Unique Years Active",
+	      "Unique Semesters Active",
+	      "PBI Zipcode"
+	    ]
+	  },
+	  "trainings": {
+	    "table": "User Activites",
+	    "keep": [
+	      "Activity Start Date",
+	      "PBI Activity Type",
+	      "Attendee Count",
+	      "PBI Attendees",
+	      "Head Count",
+	      "Hours",
+	      "PBI Lead Trainer",
+	      "PBI STEM Activity",
+	      "Name",
+	      "PBI Partner",
+	      "PBI Region",
+	      "PBI Site",
+	      "School Year",
+	      "Year-Semester",
+	      "Semester",      
+	      "Training Location"
+	    ]
+	  },
+	  "users": {
+	    "table": "Users",
+	    "keep": [
+	      "User ID Code",
+	      "First Name",
+	      "Last Name",
+	      "Gender",
+	      "Race/Ethnicity",
+	      "User Type",
+	      "Home Region",
+	      "Certified Teacher",
+	      "PBI Student Activities Led",
+	      "PBI Associated Sites",
+	      "Associated Regions",
+	      "PBI User Activities Led",
+	      "PBI Training/Activity Participation"
+	    ]
+	  },
+	  "zipcode": {
+	    "table": "Students",
+	    "keep": [
+	      "Median Income 2015",
+	      "PBI Zipcode"
+	    ]
+	  },
+	"Activity Reference": {
+	  "table": "Activity Ref",
+	  "keep": [
+	    "Activity ID",
+	    "Long Name",
+	    "Activity Type",
+	    "Provider"
+	    ]
+	  },
+	   
+	   
+	"OutsideActivityPeriods": {
+	  "table": "Outside Activity Periods",
+	    "keep": [
+	    "O-Activity_ID",
+	    "O-PBI Activity Long Name",
+	    "O-Head Count from Roster",
+	    "O-Activity Short Name",
+	    "O-Activity Type",
+	    "O-PBI Assistant Instructors",
+	    "O-Course Grade Level(s)",
+	     "O-Course Period",
+	    "O-Estimated Grade Levels (unique)",
+	    "O-Head Count",
+	    "O-Head Count Only?",
+	    "O-Hours",
+	    "O-PBI Instructors",
+	    "O-Participants Active?",
+	    "O-PBI Partner",
+	    "O-Provider",
+	    "O-PBI Region",
+	    "O-Reported Grade Levels (unique)",
+	    "O-School Year",
+	    "O-Selection",
+	    "O-Semester",
+	    "O-PBI Site",
+	    "O-Start Date",
+	    "O-Student Contact Hours",
+	    "O-PBI Students",
+	    "O-Support Level",
+	    "O-Time",
+	    "O-Total Students Enrolled",
+	      "O-All Instructors Count",
+	    "O-Year-Semester"
+	  ]
+	}
+	    
+	}
+
