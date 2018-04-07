@@ -129,6 +129,7 @@
     "table": "Students",
     "keep": [
       "Median Income 2015",
+      "ZipCodeID",
       "PBI Zipcode"
     ]
   },
@@ -138,8 +139,7 @@
     "Activity ID",
     "Long Name",
     "Activity Type",
-   "ZipCodeID",
-    "Provider"
+       "Provider"
     ]
   },
    
