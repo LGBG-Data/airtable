@@ -4,7 +4,7 @@
 	    "keep": [
 	      "Activity_ID",
 	      "PBI Activity Long Name",
-	      "Head Count from Roster",
+	      "Head Count AIR Projection",
 	      "Activity Short Name",
 	      "Activity Type",
 	      "PBI Assistant Instructors",
@@ -90,7 +90,6 @@
 	      "PBI Activity Type",
 	      "Attendee Count",
 	      "PBI Attendees",
-	      "Head Count",
 	      "Hours",
 	      "PBI Lead Trainer",
 	      "PBI STEM Activity",
