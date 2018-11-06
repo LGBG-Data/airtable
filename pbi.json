@@ -144,12 +144,12 @@
 	    "keep": [
 	    "O-Activity_ID",
 	    "O-PBI Activity Long Name",
-	    "O-Head Count from Roster",
+	    "O-Head Count AIR Projection",
 	    "O-Activity Short Name",
 	    "O-Activity Type",
 	    "O-PBI Assistant Instructors",
 	    "O-Course Grade Level(s)",
-	     "O-Course Period",
+	    "O-Course Period",
 	    "O-Estimated Grade Levels (unique)",
 	    "O-Head Count",
 	    "O-Head Count Only?",
@@ -170,7 +170,7 @@
 	    "O-Support Level",
 	    "O-Time",
 	    "O-Total Students Enrolled",
-	      "O-All Instructors Count",
+	    "O-All Instructors Count",
 	    "O-Year-Semester"
 	  ]
 	}
