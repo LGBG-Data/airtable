@@ -86,7 +86,7 @@
 	  "trainings": {
 	    "table": "User Activites",
 	    "keep": [
-	      "Activity Start Date",
+	      "Training Date",
 	      "PBI Activity Type",
 	      "Attendee Count",
 	      "PBI Attendees",
